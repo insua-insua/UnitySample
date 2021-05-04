@@ -18,8 +18,8 @@ public class Move : MonoBehaviour
 
         
         Vector3 position = transform.position;
-        position.x = position.x + moveX * speed;
-        position.z = position.z + moveZ * speed;
+        position.x += moveX * speed;
+        position.z += moveZ * speed;
         transform.position = position;
 
 

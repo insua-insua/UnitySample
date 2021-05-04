@@ -6,22 +6,26 @@ public class Spawner : MonoBehaviour
 {
     public List<Transform> points;
     public GameObject enemyGo;
-    void Start()
-    {
-        int selectedIndex = Random.Range(0, points.Count);
-        Debug.Log(points[selectedIndex]);
-    }
 
-    private void Update()
+    public bool isPlaying = true;
+    public float spawnDelay = 1f;
+
+    IEnumerator Start()
     {
-        if(Input.GetKeyDown(KeyCode.Alpha1))
+        //int selectedIndex = Random.Range(0, points.Count);
+        //Debug.Log(points[selectedIndex]);
+        while(isPlaying)
         {
             int selectedIndex = Random.Range(0, points.Count);
-            Debug.Log(points[selectedIndex]);
+            //Debug.Log(points[selectedIndex]);
+            
             var selectedTransform = points[selectedIndex];
-
             Instantiate(enemyGo, selectedTransform.position, selectedTransform.rotation);
+
+            yield return new WaitForSeconds(spawnDelay);
         }
+
     }
+
 
 }
