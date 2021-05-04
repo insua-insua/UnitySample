@@ -445,14 +445,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DogPBR
       objectReference: {fileID: 0}
-    - target: {fileID: 8422892626600285522, guid: 214e08cd5e5d74c458e2a81b7ec2c84c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8422892626600285566, guid: 214e08cd5e5d74c458e2a81b7ec2c84c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 214e08cd5e5d74c458e2a81b7ec2c84c, type: 3}
 --- !u!1 &132545977
@@ -485,7 +477,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1110603240}
-  - {fileID: 2085140274}
   m_Father: {fileID: 897819292}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1834,7 +1825,7 @@ Transform:
   m_Children:
   - {fileID: 132545978}
   m_Father: {fileID: 2111981120}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &897819294
 MonoBehaviour:
@@ -2852,6 +2843,7 @@ Transform:
   m_LocalPosition: {x: -1.9645748, y: -2.867484, z: 9.34}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 2085140274}
   - {fileID: 897819292}
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -3051,23 +3043,23 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 132545978}
+    m_TransformParent: {fileID: 2111981120}
     m_Modifications:
     - target: {fileID: 706888259956330124, guid: 840c2bc8b89cd3349b1e36e0234b4066, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 706888259956330124, guid: 840c2bc8b89cd3349b1e36e0234b4066, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.699702
+      value: 2.6642768
       objectReference: {fileID: 0}
     - target: {fileID: 706888259956330124, guid: 840c2bc8b89cd3349b1e36e0234b4066, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.6522002
+      value: 3.5196843
       objectReference: {fileID: 0}
     - target: {fileID: 706888259956330124, guid: 840c2bc8b89cd3349b1e36e0234b4066, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.054200172
+      value: -9.673727
       objectReference: {fileID: 0}
     - target: {fileID: 706888259956330124, guid: 840c2bc8b89cd3349b1e36e0234b4066, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3101,10 +3093,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: Arrow
       objectReference: {fileID: 0}
-    - target: {fileID: 706888261701524544, guid: 840c2bc8b89cd3349b1e36e0234b4066, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 706888261701524544, guid: 840c2bc8b89cd3349b1e36e0234b4066, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 840c2bc8b89cd3349b1e36e0234b4066, type: 3}
